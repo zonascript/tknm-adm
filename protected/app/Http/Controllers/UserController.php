@@ -66,6 +66,7 @@ class UserController extends Controller
         }
 
         $listBuyer = Buyer::getBuyer('btc');
+        $buyers=[];
         $x = 0;
         foreach ($listBuyer as $buyer){
             $temp = MemberProfile::getMemberProfileFromUserId($buyer->id_user);
@@ -93,6 +94,7 @@ class UserController extends Controller
             return view('403');
         }
 
+        $buyers=[];
         $listBuyer = Buyer::getBuyer('eth');
         $x = 0;
         foreach ($listBuyer as $buyer){
