@@ -12,7 +12,7 @@ class Member extends Model
     protected $guarded = [];
 
     static function getMembers(){
-        return self::all();
+        return self::where('is_kyc','=',1)->get();
     }
 
     static function getMember($id){
