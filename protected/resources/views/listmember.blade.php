@@ -74,10 +74,10 @@
                                                 <p class="col-md-4" style="float: left">Zipcode</p>
                                                 <p class="col-md-8" style="float: left">: {{ $member['zipcode'] }}</p>
                                             </div>
-                                            <div class="row">
-                                                <p class="col-md-4" style="float: left">Referral Code</p>
-                                                <p class="col-md-8" style="float: left">: {{ $member['referral_code'] }}</p>
-                                            </div>
+                                            {{--<div class="row">--}}
+                                                {{--<p class="col-md-4" style="float: left">Referral Code</p>--}}
+                                                {{--<p class="col-md-8" style="float: left">: {{ $member['referral_code'] }}</p>--}}
+                                            {{--</div>--}}
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Close</button>
