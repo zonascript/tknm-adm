@@ -63,6 +63,10 @@
                                                 <p class="col-md-8" style="float: left">: {{ $member['phone'] }} | {{ $member['verified_phone'] }}</p>
                                             </div>
                                             <div class="row">
+                                                <p class="col-md-4" style="float: left">Date of Birth</p>
+                                                <p class="col-md-8" style="float: left">: {{ $member['birth'] }}</p>
+                                            </div>
+                                            <div class="row">
                                                 <p class="col-md-4" style="float: left">Country</p>
                                                 <p class="col-md-8" style="float: left">: {{ $member['country'] }}</p>
                                             </div>

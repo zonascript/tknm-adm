@@ -43,6 +43,7 @@ class UserController extends Controller
                 'id' => $tempMember->id,
                 'name' => $tempProfile->name,
                 'email' => $tempProfile->email,
+                'birth' => $tempProfile->date_of_birth,
                 'phone' => $tempProfile->phone,
                 'country' => $UserCountry->country_name,
                 'address' => $tempProfile->address,
