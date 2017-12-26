@@ -53,3 +53,4 @@ Route::get('/listbuyerbtc', 'UserController@listBuyerBtc');
 
 //ajax
 Route::get('/getMemberCount', 'HomeController@getMemberCount');
+Route::get('/getAddressCount', 'HomeController@getAddressCount');

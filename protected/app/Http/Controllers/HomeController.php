@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\EthAddress;
 use App\Member;
 use Illuminate\Http\Request;
 use App\User as User;
@@ -38,5 +39,11 @@ class HomeController extends Controller
         $memberCount = Member::getMemberCount();
 
         return $memberCount;
+    }
+
+    public function getAddressCount(){
+        $addressCount = EthAddress::getUnusedAddressCount();
+
+        return $addressCount;
     }
 }

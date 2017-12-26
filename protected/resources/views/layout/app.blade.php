@@ -64,6 +64,10 @@
 
 </head>
 
+<div id="divAddressCount">
+
+</div>
+
 <body class="hold-transition skin-black-light sidebar-mini">
 <div class="wrapper">
 
@@ -364,12 +368,59 @@
 <script type="text/javascript">
     $( document ).ready(function() {
         $(".alerttop").fadeToggle(350);
+
+        //cek sisa address
+//        $.ajax({
+//            url: 'getAddressCount',
+//            error: function() {
+//            },
+//            success: function(data) {
+//                var addressCount = data;
+//                if(addressCount < 10){
+//                    document.getElementById('divAddressCount').innerHTML = '<div class="myadmin-alert myadmin-alert-icon myadmin-alert-click alert-error myadmin-alert-top alerttop"> Prepared address count < 10! Please contact IT Team! <a href="#" class="closed">&times;</a> </div>';
+//                }
+//
+//                $(".alerttop").fadeToggle(350);
+//
+//                $(".myadmin-alert .closed").click(function(event) {
+//                    $(this).parents(".myadmin-alert").fadeToggle(350);
+//                    return false;
+//                });
+//            },
+//            type: 'GET'
+//        });
+
     });
 
     $(".myadmin-alert .closed").click(function(event) {
         $(this).parents(".myadmin-alert").fadeToggle(350);
         return false;
     });
+
+    //cek sisa address
+//    setInterval(function(){
+//        $.ajax({
+//            url: 'getAddressCount',
+//            error: function() {
+//            },
+//            success: function(data) {
+//                var addressCount = data;
+//                if(addressCount < 10){
+//                    document.getElementById('divAddressCount').innerHTML = '<div class="myadmin-alert myadmin-alert-icon myadmin-alert-click alert-error myadmin-alert-top alerttop"> Prepared address count < 10! Please contact IT Team! <a href="#" class="closed">&times;</a> </div>';
+//                }
+//
+//                $(".alerttop").fadeToggle(350);
+//
+//                $(".myadmin-alert .closed").click(function(event) {
+//                    $(this).parents(".myadmin-alert").fadeToggle(350);
+//                    return false;
+//                });
+//            },
+//            type: 'GET'
+//        });
+//    }, 180000);
+
+
 </script>
 
 @yield('add-js')
